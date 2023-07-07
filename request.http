@@ -1,1 +1,7 @@
-GET http://localhost:8080/saludo
+
+@subdominio=idat-render-knhd
+
+GET https://{{subdominio}}.onrender.com/saludo
+
+
+GET http://localhost:8080/saludo/codigo
