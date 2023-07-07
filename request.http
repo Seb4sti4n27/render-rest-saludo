@@ -1,7 +1,11 @@
 
 @subdominio=idat-render-knhd
 
+
 GET https://{{subdominio}}.onrender.com/idynom
 
+###
+GET  http://localhost:8080/codigo
+###
 
-GET http://localhost:8080/saludo/codigo
+GET http://localhost:8080/nomcompl

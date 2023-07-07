@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class GreetingController {
 
 	private static final String template = "Sebastian  %s!";
+	private static final String templates = "Sebastian Sanchez %s!";
+	private static final String templat = "A19200436 %s!";
 	private final AtomicLong counter = new AtomicLong();
 
 	@GetMapping("/idynom")
@@ -18,7 +20,12 @@ public class GreetingController {
 	}
 
 	@GetMapping("/codigo")
-	public Greeting greeting(@RequestParam(value = "codigo", defaultValue = "") long id) {
-		return new Greeting(counter.incrementAndGet(), String.format(template, id));
+	public Greeting2 greeting2(@RequestParam(value = "codigo", defaultValue = "") String codigo) {
+		return new Greeting2(String.format(templat, codigo));
+	}
+
+	@GetMapping("/nomcompl")
+	public Greeting3 greeting3(@RequestParam(value = "namecomp", defaultValue = "") String namecomp) {
+		return new Greeting3(String.format(templates, namecomp));
 	}
 }
