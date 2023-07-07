@@ -13,17 +13,17 @@ GET https://{{subdominio}}.onrender.com/nomcompl
 ######CON BASE DE DATOS #####
 
 ###
-POST http://localhost:8080/demo/add
+POST https://{{subdominio}}.onrender.com/demo/add
 Content-Type: application/x-www-form-urlencoded
 
 name=Desarrollo sistemas
 &creditos=5
 
 ###
-DELETE http://localhost:8080/demo/del
+DELETE https://{{subdominio}}.onrender.com/demo/del
 Content-Type: application/x-www-form-urlencoded
 
 id=1
 
 ###
-GET http://localhost:8080/demo/all
+GET https://{{subdominio}}.onrender.com/demo/all
