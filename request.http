@@ -23,7 +23,7 @@ name=Desarrollo sistemas
 DELETE https://{{subdominio}}.onrender.com/demo/del
 Content-Type: application/x-www-form-urlencoded
 
-id=1
+id=2
 
 ###
 GET https://{{subdominio}}.onrender.com/demo/all
