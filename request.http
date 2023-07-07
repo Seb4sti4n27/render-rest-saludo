@@ -5,7 +5,25 @@
 GET https://{{subdominio}}.onrender.com/idynom
 
 ###
-GET  http://localhost:8080/codigo
+GET  https://{{subdominio}}.onrender.com/codigo
 ###
 
-GET http://localhost:8080/nomcompl
+GET https://{{subdominio}}.onrender.com/nomcompl
+
+######CON BASE DE DATOS #####
+
+###
+POST http://localhost:8080/demo/add
+Content-Type: application/x-www-form-urlencoded
+
+name=Desarrollo sistemas
+&creditos=5
+
+###
+DELETE http://localhost:8080/demo/del
+Content-Type: application/x-www-form-urlencoded
+
+id=1
+
+###
+GET http://localhost:8080/demo/all
